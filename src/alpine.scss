@@ -1,1 +1,8 @@
 @import "reset";
+@import "variables";
+
+@each $name, $weight in $font-weights {
+  .font-#{$name} {
+    font-weight: $weight;
+  }
+}
