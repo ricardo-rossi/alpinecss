@@ -4,27 +4,27 @@
   Padding utility classes
  */
 @each $size, $unit in $spacing {
-  .pa-#{$size} {
+  .pa#{$size} {
     padding: #{$unit};
   }
-  .py-#{$size} {
+  .py#{$size} {
     padding-top: #{$unit};
     padding-bottom: #{$unit};
   }
-  .px-#{$size} {
+  .px#{$size} {
     padding-right: #{$unit};
     padding-left: #{$unit};
   }
-  .pt-#{$size} {
+  .pt#{$size} {
     padding-top: #{$unit};
   }
-  .pr-#{$size} {
+  .pr#{$size} {
     padding-right: #{$unit};
   }
-  .pb-#{$size} {
+  .pb#{$size} {
     padding-bottom: #{$unit};
   }
-  .pl-#{$size} {
+  .pl#{$size} {
     padding-left: #{$unit};
   }
 }
@@ -33,50 +33,205 @@
   Margin utility classes
  */
 @each $size, $unit in $spacing {
-  .ma-#{$size} {
+  .ma#{$size} {
     margin: #{$unit};
   }
-  .ma-auto {
-    margin: auto;
-  }
-  .my-#{$size} {
+  .my#{$size} {
     margin-top: #{$unit};
     margin-bottom: #{$unit};
   }
-  .my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  .mx-#{$size} {
+  .mx#{$size} {
     margin-right: #{$unit};
     margin-left: #{$unit};
   }
-  .mx-auto {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .mt-#{$size} {
+  .mt#{$size} {
     margin-top: #{$unit};
   }
-  .mt-auto {
-    margin-top: auto;
-  }
-  .mr-#{$size} {
+  .mr#{$size} {
     margin-right: #{$unit};
   }
-  .mr-auto {
-    margin-right: auto;
-  }
-  .mb-#{$size} {
+  .mb#{$size} {
     margin-bottom: #{$unit};
   }
-  .mb-auto {
-    margin-bottom: auto;
-  }
-  .ml-#{$size} {
+  .ml#{$size} {
     margin-left: #{$unit};
   }
-  .ml-auto {
-    margin-left: auto;
+}
+
+.ma-auto {
+  margin: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+
+/**
+  Width utility classes
+ */
+@each $size, $unit in $spacing {
+  .w#{$size} {
+    width: #{$unit};
   }
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
+}
+
+.w-3\/6 {
+  width: 50%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-1\/12 {
+  width: 8.333333%;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+
+/**
+  Height utility classes
+ */
+@each $size, $unit in $spacing {
+  .h#{$size} {
+    height: #{$unit};
+  }
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vw;
 }

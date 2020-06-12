@@ -1,0 +1,10 @@
+@import "../theme";
+
+/**
+  Font utility classes
+ */
+@each $size, $unit in $spacing {
+  .text#{$size} {
+    font-size: #{$unit};
+  }
+}
