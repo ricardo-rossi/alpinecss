@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/alpine.html",
-    "build": "parcel build src/alpine.html --no-source-maps"
+    "build": "parcel build --no-source-maps src/alpine.html"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/alpinecss/alpinecss#readme",
   "devDependencies": {
+    "autoprefixer": "^9.8.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-clean-dist": "0.0.6",
     "parcel-plugin-compress": "^2.0.2",
+    "postcss-modules": "^2.0.0",
     "sass": "^1.26.8"
   },
   "compress": {
