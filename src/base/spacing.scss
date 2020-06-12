@@ -1,0 +1,82 @@
+@import "../theme";
+
+/**
+  Padding utility classes
+ */
+@each $size, $unit in $spacing {
+  .pa-#{$size} {
+    padding: #{$unit};
+  }
+  .py-#{$size} {
+    padding-top: #{$unit};
+    padding-bottom: #{$unit};
+  }
+  .px-#{$size} {
+    padding-right: #{$unit};
+    padding-left: #{$unit};
+  }
+  .pt-#{$size} {
+    padding-top: #{$unit};
+  }
+  .pr-#{$size} {
+    padding-right: #{$unit};
+  }
+  .pb-#{$size} {
+    padding-bottom: #{$unit};
+  }
+  .pl-#{$size} {
+    padding-left: #{$unit};
+  }
+}
+
+/**
+  Margin utility classes
+ */
+@each $size, $unit in $spacing {
+  .ma-#{$size} {
+    margin: #{$unit};
+  }
+  .ma-auto {
+    margin: auto;
+  }
+  .my-#{$size} {
+    margin-top: #{$unit};
+    margin-bottom: #{$unit};
+  }
+  .my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .mx-#{$size} {
+    margin-right: #{$unit};
+    margin-left: #{$unit};
+  }
+  .mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mt-#{$size} {
+    margin-top: #{$unit};
+  }
+  .mt-auto {
+    margin-top: auto;
+  }
+  .mr-#{$size} {
+    margin-right: #{$unit};
+  }
+  .mr-auto {
+    margin-right: auto;
+  }
+  .mb-#{$size} {
+    margin-bottom: #{$unit};
+  }
+  .mb-auto {
+    margin-bottom: auto;
+  }
+  .ml-#{$size} {
+    margin-left: #{$unit};
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+}

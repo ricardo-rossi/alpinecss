@@ -2,7 +2,7 @@
   "name": "alpinecss",
   "version": "0.9.1",
   "description": "Alpine CSS",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "dev": "parcel src/alpine.html",
     "build": "parcel build --no-source-maps src/alpine.html"
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/alpinecss/alpinecss.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "The Alpine CSS Authors",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alpinecss/alpinecss/issues"
