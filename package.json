@@ -1,11 +1,11 @@
 {
   "name": "alpinecss",
-  "version": "1.0.0",
+  "version": "0.9.1",
   "description": "Alpine CSS",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/alpine.html",
+    "build": "parcel build src/alpine.html --no-source-maps"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,29 @@
   "homepage": "https://github.com/alpinecss/alpinecss#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-compress": "^2.0.2",
     "sass": "^1.26.8"
+  },
+  "compress": {
+    "test": ".css$",
+    "gzip": {
+      "enabled": true,
+      "numiterations": 15,
+      "blocksplitting": true,
+      "blocksplittinglast": false,
+      "blocksplittingmax": 15,
+      "zlib": false,
+      "zlibLevel": 9,
+      "zlibMemLevel": 9
+    },
+    "brotli": {
+      "enabled": true,
+      "mode": 1,
+      "quality": 11,
+      "lgwin": 24,
+      "enable_context_modeling": true
+    },
+    "compressOutput": false
   }
 }
