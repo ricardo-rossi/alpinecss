@@ -1,0 +1,46 @@
+@import "theme";
+@import "helpers";
+
+/**
+* Positioning utilities
+*/
+
+.t-l {
+  text-align: left;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.t-r {
+  text-align: right;
+}
+
+.t-j {
+  text-align: justify;
+}
+
+.va {
+  vertical-align: baseline;
+}
+
+.va-t {
+  vertical-align: top;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.va-b {
+  vertical-align: bottom;
+}
+
+.va-tt {
+  vertical-align: text-top;
+}
+
+.va-tb {
+  vertical-align: text-bottom;
+}

@@ -1,0 +1,23 @@
+@import "theme";
+@import "helpers";
+
+// Opacity utilities
+
+@each $key, $value in $opacity {
+  .opa-#{$key} {
+    opacity: #{$value};
+  }
+}
+
+@each $key, $value in $opacity {
+  .t-opa-#{$key} {
+    --text-opacity: #{$value};
+  }
+}
+
+@each $key, $value in $opacity {
+  .bg-opa-#{$key} {
+    --bg-opacity: #{$value};
+  }
+}
+

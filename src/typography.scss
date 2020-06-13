@@ -1,5 +1,5 @@
-@import "../theme";
-@import "../util/helpers";
+@import "theme";
+@import "helpers";
 
 // Font utility classes
 
@@ -53,26 +53,6 @@
   color: #FFF;
 }
 
-// Opacity utilities
-
-@each $key, $value in $opacity {
-  .opa-#{$key} {
-    opacity: #{$value};
-  }
-}
-
-@each $key, $value in $opacity {
-  .t-opa-#{$key} {
-    --text-opacity: #{$value};
-  }
-}
-
-@each $key, $value in $opacity {
-  .bg-opa-#{$key} {
-    --bg-opacity: #{$value};
-  }
-}
-
 // Other text utilities
 
 .under {
@@ -99,54 +79,3 @@
   text-transform: none;
 }
 
-/**
-* Alignment utilities
-*/
-
-.t-l {
-  text-align: left;
-}
-
-.t-c {
-  text-align: center;
-}
-
-.t-r {
-  text-align: right;
-}
-
-.t-j {
-  text-align: justify;
-}
-
-.va {
-  vertical-align: baseline;
-}
-
-.va-t {
-  vertical-align: top;
-}
-
-.va-m {
-  vertical-align: middle;
-}
-
-.va-b {
-  vertical-align: bottom;
-}
-
-.va-tt {
-  vertical-align: text-top;
-}
-
-.va-tb {
-  vertical-align: text-bottom;
-}
-
-// Shadow utilities
-
-@each $key, $value in $shadows {
-  .sha#{getLabel($key)} {
-    box-shadow: #{$value};
-  }
-}
