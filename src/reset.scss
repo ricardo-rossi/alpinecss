@@ -48,12 +48,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
-
 /* Natural flow and rhythm in articles by default */
 article > * + * {
   margin-top: 1em;
@@ -65,14 +59,4 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
