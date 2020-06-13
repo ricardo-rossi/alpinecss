@@ -10,7 +10,7 @@
   }
 }
 
-.italic {
+.ita {
   font-style: italic;
 }
 
@@ -20,21 +20,6 @@
   }
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-justify {
-  text-align: justify;
-}
 
 /**
 * Color utilities
@@ -58,16 +43,110 @@
 
 @each $color, $map in $colors {
   @each $num, $hex in $map {
-    .text-#{$color}-#{$num} {
+    .t-#{$color}-#{$num} {
       color: #{$hex};
     }
   }
 }
 
-.text-black {
-  color: #000000;
+.t-black {
+  color: #000;
 }
 
-.text-white {
-  color: #FFFFFF;
+.t-white {
+  color: #FFF;
+}
+
+/**
+* Opacity utilities
+*/
+
+@each $key, $value in $opacity {
+  .opacity-#{$key} {
+    opacity: #{$value};
+  }
+}
+
+@each $key, $value in $opacity {
+  .t-opacity-#{$key} {
+    --text-opacity: #{$value};
+  }
+}
+
+@each $key, $value in $opacity {
+  .bg-opacity-#{$key} {
+    --bg-opacity: #{$value};
+  }
+}
+
+/**
+* Other text utilities
+*/
+
+.under {
+  text-decoration: underline;
+}
+
+.no-under {
+  text-decoration: none;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.normal {
+  text-transform: none;
+}
+
+/**
+* Alignment utilities
+*/
+
+.t-left {
+  text-align: left;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-justify {
+  text-align: justify;
+}
+
+.al-base {
+  vertical-align: baseline;
+}
+
+.al-top {
+  vertical-align: top;
+}
+
+.al-mid {
+  vertical-align: middle;
+}
+
+.al-bot {
+  vertical-align: bottom;
+}
+
+.al-t-top {
+  vertical-align: text-top;
+}
+
+.al-t-bot {
+  vertical-align: text-bottom;
 }

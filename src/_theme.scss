@@ -1,18 +1,15 @@
-/**
-  Sets the spacing variables used by the padding and margins utility classes
- */
 $spacing: (
-        none: '0',
-        xs: '0.25rem',
-        sm: '0.5rem',
-        md: '1rem',
-        lg: '2rem',
-        xl: '3rem',
+        none: 0,
+        xs: 0.25rem,
+        sm: 0.5rem,
+        md: 1rem,
+        lg: 2rem,
+        xl: 3rem,
         xl2:4rem,
-        xl3: '5rem',
-        xl4: '8rem',
-        xl5: '12rem',
-        xl6: '16rem',
+        xl3: 5rem,
+        xl4: 8rem,
+        xl5: 12rem,
+        xl6: 16rem,
 );
 
 $font-sizes: (
@@ -29,7 +26,7 @@ $font-sizes: (
 );
 
 $colors: (
-        red: (
+        "red": (
                 50: #FFEBEE,
                 100: #FFCDD2,
                 200: #EF9A9A,
@@ -41,7 +38,7 @@ $colors: (
                 800: #C62828,
                 900: #B71C1C,
         ),
-        blue: (
+        "blue": (
                 50: #E1F5FE,
                 100: #B3E5FC,
                 200: #81D4FA,
@@ -53,7 +50,7 @@ $colors: (
                 800: #0277BD,
                 900: #01579B,
         ),
-        green: (
+        "green": (
                 50: #E8F5E9,
                 100: #C8E6C9,
                 200: #A5D6A7,
@@ -65,7 +62,7 @@ $colors: (
                 800: #2E7D32,
                 900: #1B5E20,
         ),
-        orange: (
+        "orange": (
                 50: #FFF3E0,
                 100: #FFE0B2,
                 200: #FFCC80,
@@ -77,7 +74,7 @@ $colors: (
                 800: #EF6C00,
                 900: #E65100,
         ),
-        gray: (
+        "gray": (
                 50: #FAFAFA,
                 100: #F5F5F5,
                 200: #EEEEEE,
@@ -91,3 +88,41 @@ $colors: (
         ),
 );
 
+$opacity: (
+        0: 0,
+        25: 0.25,
+        50: 0.5,
+        75: 0.75,
+        100: 1,
+);
+
+$borders: (
+        radius: (
+                none: "0",
+                sm: "0.125rem",
+                default: "0.25rem",
+                md: "0.375rem",
+                lg: "0.5rem",
+                full: "9999px",
+        ),
+        width: (
+                default: "1px",
+                "0": "0",
+                "2": "2px",
+                "4": "4px",
+                "8": "8px",
+        ),
+);
+
+$shadows: (
+        xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
+        sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+        default: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+        md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+        xl2: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+        outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
+        none: "none",
+);

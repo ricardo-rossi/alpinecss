@@ -1,0 +1,7 @@
+@function getLabel($key) {
+  @if $key == "default" {
+    @return "";
+  } @else {
+    @return "-#{$key}";
+  }
+}
