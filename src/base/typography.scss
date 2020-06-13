@@ -1,8 +1,7 @@
 @import "../theme";
+@import "../util/helpers";
 
-/**
-  Font utility classes
- */
+// Font utility classes
 
 @each $size, $unit in $spacing {
   .fs-#{$size} {
@@ -20,10 +19,7 @@
   }
 }
 
-
-/**
-* Color utilities
-*/
+// Color utilities
 
 @each $color, $map in $colors {
   @each $num, $hex in $map {
@@ -57,31 +53,27 @@
   color: #FFF;
 }
 
-/**
-* Opacity utilities
-*/
+// Opacity utilities
 
 @each $key, $value in $opacity {
-  .opacity-#{$key} {
+  .opa-#{$key} {
     opacity: #{$value};
   }
 }
 
 @each $key, $value in $opacity {
-  .t-opacity-#{$key} {
+  .t-opa-#{$key} {
     --text-opacity: #{$value};
   }
 }
 
 @each $key, $value in $opacity {
-  .bg-opacity-#{$key} {
+  .bg-opa-#{$key} {
     --bg-opacity: #{$value};
   }
 }
 
-/**
-* Other text utilities
-*/
+// Other text utilities
 
 .under {
   text-decoration: underline;
@@ -111,42 +103,50 @@
 * Alignment utilities
 */
 
-.t-left {
+.t-l {
   text-align: left;
 }
 
-.t-center {
+.t-c {
   text-align: center;
 }
 
-.t-right {
+.t-r {
   text-align: right;
 }
 
-.t-justify {
+.t-j {
   text-align: justify;
 }
 
-.al-base {
+.va {
   vertical-align: baseline;
 }
 
-.al-top {
+.va-t {
   vertical-align: top;
 }
 
-.al-mid {
+.va-m {
   vertical-align: middle;
 }
 
-.al-bot {
+.va-b {
   vertical-align: bottom;
 }
 
-.al-t-top {
+.va-tt {
   vertical-align: text-top;
 }
 
-.al-t-bot {
+.va-tb {
   vertical-align: text-bottom;
+}
+
+// Shadow utilities
+
+@each $key, $value in $shadows {
+  .sha#{getLabel($key)} {
+    box-shadow: #{$value};
+  }
 }

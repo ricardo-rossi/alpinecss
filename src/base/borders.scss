@@ -7,19 +7,19 @@
 
 @each $key, $value in map-get($borders, radius) {
   $label: getLabel($key);
-  .round#{$label} {
+  .rou#{$label} {
     border-radius: #{$value};
   }
-  .round-tl#{$label} {
+  .rou-tl#{$label} {
     border-top-left-radius: #{$value};
   }
-  .round-tr#{$label} {
+  .rou-tr#{$label} {
     border-top-right-radius: #{$value};
   }
-  .round-bl#{$label} {
+  .rou-bl#{$label} {
     border-bottom-left-radius: #{$value};
   }
-  .round-br#{$label} {
+  .rou-br#{$label} {
     border-bottom-right-radius: #{$value};
   }
 }
