@@ -4,27 +4,27 @@
   Padding utility classes
  */
 @each $size, $unit in $spacing {
-  .pa#{$size} {
+  .pa-#{$size} {
     padding: #{$unit};
   }
-  .py#{$size} {
+  .py-#{$size} {
     padding-top: #{$unit};
     padding-bottom: #{$unit};
   }
-  .px#{$size} {
+  .px-#{$size} {
     padding-right: #{$unit};
     padding-left: #{$unit};
   }
-  .pt#{$size} {
+  .pt-#{$size} {
     padding-top: #{$unit};
   }
-  .pr#{$size} {
+  .pr-#{$size} {
     padding-right: #{$unit};
   }
-  .pb#{$size} {
+  .pb-#{$size} {
     padding-bottom: #{$unit};
   }
-  .pl#{$size} {
+  .pl-#{$size} {
     padding-left: #{$unit};
   }
 }
@@ -33,27 +33,27 @@
   Margin utility classes
  */
 @each $size, $unit in $spacing {
-  .ma#{$size} {
+  .ma-#{$size} {
     margin: #{$unit};
   }
-  .my#{$size} {
+  .my-#{$size} {
     margin-top: #{$unit};
     margin-bottom: #{$unit};
   }
-  .mx#{$size} {
+  .mx-#{$size} {
     margin-right: #{$unit};
     margin-left: #{$unit};
   }
-  .mt#{$size} {
+  .mt-#{$size} {
     margin-top: #{$unit};
   }
-  .mr#{$size} {
+  .mr-#{$size} {
     margin-right: #{$unit};
   }
-  .mb#{$size} {
+  .mb-#{$size} {
     margin-bottom: #{$unit};
   }
-  .ml#{$size} {
+  .ml-#{$size} {
     margin-left: #{$unit};
   }
 }
@@ -93,7 +93,7 @@
   Width utility classes
  */
 @each $size, $unit in $spacing {
-  .w#{$size} {
+  .w-#{$size} {
     width: #{$unit};
   }
 }
@@ -219,7 +219,7 @@
   Height utility classes
  */
 @each $size, $unit in $spacing {
-  .h#{$size} {
+  .h-#{$size} {
     height: #{$unit};
   }
 }

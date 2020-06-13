@@ -3,8 +3,71 @@
 /**
   Font utility classes
  */
+
 @each $size, $unit in $spacing {
-  .text#{$size} {
+  .fs-#{$size} {
     font-size: #{$unit};
   }
+}
+
+.italic {
+  font-style: italic;
+}
+
+@for $i from 1 through 9 {
+  .fw-#{$i * 100} {
+    font-weight: #{$i * 100};
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/**
+* Color utilities
+*/
+
+@each $color, $map in $colors {
+  @each $num, $hex in $map {
+    .bg-#{$color}-#{$num} {
+      background-color: #{$hex};
+    }
+  }
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+@each $color, $map in $colors {
+  @each $num, $hex in $map {
+    .text-#{$color}-#{$num} {
+      color: #{$hex};
+    }
+  }
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-white {
+  color: #FFFFFF;
 }
