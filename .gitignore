@@ -1,4 +1,11 @@
 .idea
 .cache
-dist
+watch
+dist/*
 node_modules
+!dist/alpine.css
+!dist/alpine.css.map
+!dist/alpine.min.css.map
+!dist/alpine.min.css.br
+!dist/alpine.min.css.gz
+!dist/alpine.min.css

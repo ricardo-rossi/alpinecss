@@ -4,8 +4,8 @@
   "description": "Alpine CSS",
   "main": "",
   "scripts": {
-    "dev": "parcel src/alpine.html",
-    "build": "parcel build --no-source-maps src/alpine.html"
+    "dev": "parcel src/alpine.html --out-dir watch",
+    "build": "parcel build src/alpine.html"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,6 @@
     "parcel-bundler": "1.12.5",
     "parcel-plugin-clean-dist": "0.0.6",
     "parcel-plugin-compress": "2.0.2",
-    "postcss-modules": "5.0.0",
     "sass": "1.54.9"
   },
   "compress": {
