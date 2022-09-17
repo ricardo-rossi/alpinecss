@@ -19,12 +19,12 @@
   },
   "homepage": "https://github.com/alpinecss/alpinecss#readme",
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
-    "parcel-bundler": "^1.12.4",
+    "autoprefixer": "9.8.8",
+    "parcel-bundler": "1.12.5",
     "parcel-plugin-clean-dist": "0.0.6",
-    "parcel-plugin-compress": "^2.0.2",
-    "postcss-modules": "^2.0.0",
-    "sass": "^1.26.8"
+    "parcel-plugin-compress": "2.0.2",
+    "postcss-modules": "5.0.0",
+    "sass": "1.54.9"
   },
   "compress": {
     "test": ".css$",
