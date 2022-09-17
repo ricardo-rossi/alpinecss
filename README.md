@@ -1,6 +1,7 @@
 # alpinecss
 Alpine CSS
 
+Get it here: https://www.jsdelivr.com/package/gh/ricardo-rossi/alpinecss
 
 ## Elements
 
@@ -34,12 +35,12 @@ border-color
 border-width
 border-radius
 
-S 
-Size 
+S
+Size
 {
     W
     width
-    
+
     H
     height
 }

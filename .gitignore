@@ -1,5 +1,6 @@
 .idea
 .cache
+.DS_Store
 watch
 dist/*
 node_modules
